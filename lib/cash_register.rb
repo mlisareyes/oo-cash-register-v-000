@@ -21,6 +21,9 @@ class CashRegister
     end
   end
 
+  def items
+  end
+
   def void_last_transaction
     if self.last_transaction != {}
       self.items.pop(self.last_transaction[:quantity])
