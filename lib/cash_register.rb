@@ -10,7 +10,6 @@ class CashRegister
   end
 
   def add_item(title, price)
-    @all
   end
 
 end
