@@ -11,7 +11,6 @@ class CashRegister
 
   def self.add_item
     @all
-
   end
 
 end
