@@ -21,8 +21,11 @@ class CashRegister
     end
   end
 
-  def self.items
-    @@items
+  def items
+    list_of_items = []
+    @@all.each {|list|}
+    list_of_items << list[0]
+    list_of_items
   end
 
   def void_last_transaction
