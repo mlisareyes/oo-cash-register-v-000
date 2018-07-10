@@ -10,6 +10,12 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
+    quantity.times{self.items.push(title)}
+    self.last_transaction = {
+      title: title,
+      price: price,
+      quantity: quantity
+    }
   end
 
   def apply_discount
@@ -19,13 +25,6 @@ class CashRegister
     else
       "There is no discount to apply."
     end
-  end
-
-  def items
-    list_of_items = []
-    @@all.each {|list|}
-    list_of_items << list[0]
-    list_of_items
   end
 
   def void_last_transaction
