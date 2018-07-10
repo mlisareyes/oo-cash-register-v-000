@@ -6,7 +6,10 @@ class CashRegister
     self.total = 0
     self.discount = discount
     @@all = []
-    
+
+  end
+
+  def add_item
   end
 
 end
